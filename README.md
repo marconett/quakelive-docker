@@ -1,6 +1,6 @@
 # QuakeLive docker container
 
-## QL server in 5 minutes
+## QL server in 2 minutes
 * Put your SteamID into `access.txt` for admin access
 * Put the Workshop ItemID of the addons you want into `workshop.txt`
 * Define mappools (all `.txt` files will be copied to the container)
@@ -13,3 +13,4 @@
 * `.txt` and `.cfg` files are just examples.
 * IDs ZMQ Python scripts are included for easy access. I didn't write or change those.
 * The whole thing should probably be extended to make different `server.cfg` files per container possible.
+* Image on [Docker Hub](https://hub.docker.com/r/marconett/quakelive/)
