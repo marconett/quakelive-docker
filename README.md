@@ -1,16 +1,17 @@
 # QuakeLive docker container
 
 ## QL server in 2 minutes
+* `git clone https://github.com/marconett/quakelive-docker`
 * Put your SteamID into `access.txt` for admin access
 * Put the Workshop ItemID of the addons you want into `workshop.txt`
 * Define mappools (all `.txt` files will be copied to the container)
-* Alter `server.cfg` to your liking (all `.cfg` files will be copied to the container)
-* Alter the cvars in `start.sh`
-* `./start.sh <x>` created a docker container with quake on ports 2796x and 2896x (rcon)
+* Create a base config in `server.cfg`
+* Put more variable in `start.sh`
+* `docker build -t "quake:latest" .`
+* `./start.sh <x>` create a docker container with quake on ports 2796x and 2896x (rcon)
 
 ## Notes
-* `start.sh` is pretty much the one from the ID tutorial.
 * `.txt` and `.cfg` files are just examples.
 * IDs ZMQ Python scripts are included for easy access. I didn't write or change those.
-* The whole thing should probably be extended to make different `server.cfg` files per container possible.
-* Image on [Docker Hub](https://hub.docker.com/r/marconett/quakelive/)
+* This should be extended to make different `server.cfg` files per container possible.
+* The image on [Docker Hub](https://hub.docker.com/r/marconett/quakelive/) is useless. Please roll your own.
