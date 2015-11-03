@@ -1,12 +1,12 @@
 # QuakeLive docker container
 
-## QL server in 2 minutes
+## QL server in 5 minutes
 * `git clone https://github.com/marconett/quakelive-docker`
 * Put your SteamID into `access.txt` for admin access
 * Put the Workshop ItemID of the addons you want into `workshop.txt`
 * Define mappools (all `.txt` files will be copied to the container)
 * Create a base config in `server.cfg`
-* Put more variable in `start.sh`
+* Put more variable stuff in `start.sh`
 * `docker build -t "quake:latest" .`
 * `./start.sh <x>` create a docker container with quake on ports 2796x and 2896x (rcon)
 
